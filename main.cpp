@@ -23,7 +23,6 @@ public:
 
     bool primeCheck(int n) {
         vector<int> factors = primeFactors(n);
-
         if (factors.size() == 1) {
             return true;
         }
@@ -31,7 +30,6 @@ public:
     }
 
     bool compositeCheck(int n) {
-        
         if (n > 1 && !primeCheck(n)) {
             return true;
         }
